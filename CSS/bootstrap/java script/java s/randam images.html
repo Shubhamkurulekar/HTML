@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Random images using js</title>
+   <style>
+       *{
+           margin: opx;
+           padding: 0px;
+           box-sizing: border-box;
+           text-transform: capitalize;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .container {
+           min-height: 100vh;
+           display: grid;
+           place-items: center;
+           padding-bottom: 60px;
+           background: url(https://source.unsplash.com/random) no-repeat; /*unsplash source*/
+           background-size: cover;
+           background-position: center;
+
+       }
+       .container.content {
+           text-align: center;
+
+       }
+       .container .content h2 {
+           font-size: 50px;
+           color: red;
+           padding: 10px 0;
+       }
+       .container .content p {
+           font-size: 20px;
+           color:blue;
+           padding: 10px 0;
+       }
+       .container .content button{
+           height: 50px;
+           width: 200px;
+           color: burlywood;
+           cursor: pointer;
+           font-size: 20px;
+           margin-top: 10px;
+       }
+       .container .content button:hover {
+           color: chartreuse;
+
+       }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Randam images every 5 second</h2>
+            <p>please click on the button for new images</p>
+            <button onclick="refresh()">Randam images</button>
+
+        </div>
+
+    </div>
+    <script>
+        function refresh(){
+            window.location.reload();
+        }
+        setInterval(refresh, 5000); //the functin will run in every 5second timer should delay between exacuation of the calllback function
+    </script>
+    
+</body>
+</html>

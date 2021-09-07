@@ -1,0 +1,119 @@
+<doctype>
+<html>
+<head>
+    <title>Div Based Layout</title>
+    <style>
+        body{
+            font-family: arial;
+            background-color: cornflowerblue;
+            margin: 0px;
+            padding:0px;
+            border: 5px solid darkgreen;
+            
+        }
+        #wrapper{
+            border: 1px solid black;
+            width: 1000px;
+            background-color: burlywood;
+            margin: 0 auto;
+        }
+        #header{
+            background-color: darkblue;
+            color: white;
+            height: 100px;
+            text-align: center;
+            
+        }
+        #menu {
+            background-color: orchid;
+            
+        }
+        #menu ul {
+            margin: 0%;
+            padding: 0%;
+        }
+        #menu li{
+            display:inline-block;
+        }
+        #menu li a{
+            display:inline;
+            padding:10px 12px;
+            text-decoration:none;
+            color: black;
+        }
+        #menu li a:hover{
+            background-color: violet;
+            color: yellow;
+        }
+
+        #content{
+            width: 800px;
+            float: left;
+            min-height: 500px;
+            padding: 15px;
+            box-sizing: border-box;
+            
+        }
+        #sidebar {
+            background-color: yellow;
+            width: 200px;
+            padding: 20px;
+            float: right;
+            min-height: 500px;
+            box-sizing: border-box;
+        }
+        #sidebar li a{
+            display: inline-block;
+            padding: 20px 20px;
+            text-decoration:none;
+            color: black;
+        }
+        #sidebar li a:hover{
+            color: royalblue;
+        }
+        #footer{
+            background-color: green;
+            text-align: right;
+            clear: both;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+        <h1>The Great INDIA</h1>
+    </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">contact us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>About Great India </h2>
+            <p>India, officially the Republic of India  is a country in South Asia. It is the second-most populous country, the seventh-largest country by land area, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west;[f] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar and Indonesia.</p>
+            <div style="display: flex;justify-content: center;align-items: center;">
+            <img src="india.jpg" hight=200; width=300;>
+             </div>
+    
+        </div>
+        <div id="sidebar">                                                                                                                                                                                                                                               ">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">contact us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            India @copy right
+        </div>
+    </div>
+
+</body>
+
+</html>

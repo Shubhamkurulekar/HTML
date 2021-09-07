@@ -1,0 +1,13 @@
+.heading1 {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding: 200px;
+    background-color: saddlebrown;
+}
+h1{
+    color: red;
+}
+#footer{
+    background-color: rosybrown;
+}

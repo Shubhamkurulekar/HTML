@@ -1,0 +1,34 @@
+#centre{
+    text-align: center;
+    padding-top: 25%;
+    color: blanchedalmond;
+   
+}
+#tc{
+    font-weight: 700;
+    font-size: 50px;
+}
+button{
+    background-color:yellow;
+}
+#tc::first-letter{
+    font-size: 100px;
+    color: red;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1597049176495-60ca7846c7ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+
+}
+hr{
+    width: 200px;
+    color: red;
+}
+#bg{
+    background-color:lightskyblue;
+}
+html{
+    height: 100%;
+}

@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 100px;
+}
+.nav-item{
+    padding: 10px;
+
+}
+.nav-item:hover{
+    color: yellow;
+}
+
+.main {
+    background-image: url(https://static3.bigstockphoto.com/7/9/2/large1500/297327022.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+}
+.main h1{
+     font-size: 4rem;
+     font-weight: 700;
+     color: white;
+     padding-top: 120px;
+}
+.card {
+    margin-top: 50px;
+
+
+}
+#counter-section {
+    background-color: lightseagreen;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-position: center;
+    background-size: cover;
+
+
+}
+.icons {
+    font-size: 40px;
+    color: green;
+}
+@media only screen and (max-width:500px){
+    .icons {
+        font-size: 30px;
+        color:red;
+
+    }
+}
+#footer {
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footer a{
+    color: red;
+
+}

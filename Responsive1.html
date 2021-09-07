@@ -1,0 +1,85 @@
+<doctype>
+    <html>
+<head>
+    <title>Responsive Based Layout</title>
+</head>
+<style>
+     body {
+        margin: 0;
+        padding: 0;
+        background-color:lightblue;
+    }
+     .wrapper{
+         padding: 10px;
+         max-width: 960px;
+         width:95%;
+         margin: 20px auto;
+        background-color:hotpink;
+    }
+    header{
+        padding: 0 15px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .columns{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        margin: 5px 0;
+    }
+    .column{
+        flex: 1;
+        border: 1px;
+        margin: 2px;
+        padding: 10px;
+        background: chocolate;
+        transition: 0.3s;
+    }
+    .column :first-child {
+        margin-left: 0;
+        background: cyan;
+    }
+    .column :last-child {
+        margin-left: 0;
+        background: greenyellow;
+    }
+    @media screen and (max-width:980px){
+        .columns .column{
+            margin-bottom: 5px;
+            flex-basis: 40%;
+        }
+        .columns .column:last-child{
+            flex flex-basis:100%;
+            margin: 0%;
+        }
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Types of Sport</h1>
+        </header>
+        <section class="columns">
+            <div class="column">
+                <h2>1Cricket</h2>
+                <p>Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball bowled at the wicket with the bat (and running between the wickets), while the bowling and fielding side tries to prevent this (by preventing the ball from leaving the field, and getting the ball to either wicket) and dismiss each batter (so they are "out").
+                </p>
+            </div>
+            <div class="column">
+                <h2>2 Hocky</h2>
+                <p>Hockey is a sport in which two teams play against each other by trying to manoeuvre a ball or a puck into the opponent's goal using a hockey stick. There are many types of hockey such as bandy, field hockey, ice hockey and rink hockey.
+                </p>
+            </div>
+            <div class="column">
+                <h2>3 Football</h2>
+                <p>Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football normally means the form of football that is the most popular where the word is used.
+                </p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+
+
+    </html>
